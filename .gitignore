@@ -1,0 +1,20 @@
+
+# File type to ignore 
+_cache/
+_old/
+bin/
+zips/
+lib/
+
+Emsc.cfg
+
+*.exe.config
+*.pdb
+*.nsi
+*.cfg_sanity
+*.zip
+
+DrMemory/
+gdb/
+libexec/
+elf_tool/

@@ -19,16 +19,14 @@
 	
     <Compiler>elf_tool/bin/i686-elf-g++.exe</Compiler>
 	<Linker>elf_tool/bin/i686-elf-g++.exe</Linker>
-    <Linker_Static>bin/ar.exe</Linker_Static>
-    <Linker_Dynamic>bin/g++.exe</Linker_Dynamic>
+    <Linker_Static>elf_tool/bin/i686-elf-ar.exe</Linker_Static>
+    <Linker_Dynamic>elf_tool/bin/i686-elf-g++.exe</Linker_Dynamic>
 	
 	
 	<Debugger>gdb/gdb_32.exe</Debugger>
 	<Sanitizer>DrMemory/bin/drmemory.exe</Sanitizer>
-	
-	<clang>bin/clang.exe</clang>
+
 	<gcc>elf_tool/bin/i686-elf-gcc.exe</gcc>
-	<gccori>bin/gcc.exe</gccori>
 	<ld>elf_tool/bin/i686-elf-ld.exe</ld>
 	<objcopy>elf_tool/bin/i686-elf-objcopy.exe</objcopy>
 	<objdump>elf_tool/bin/i686-elf-objdump.exe</objdump>
