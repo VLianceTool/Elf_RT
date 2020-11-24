@@ -36,7 +36,8 @@
 </Exe>
 
 <Arguments>
-
+	<CompilerLinker>-I"{_pModule}elf_tool/lib/gcc/i686-elf/7.1.0/include/" </CompilerLinker>
+	<CompilerLinker>-I"{_pModule}elf_tool/include/" </CompilerLinker>
 	
 	<CompilerLinker>-I"{_pProject}" </CompilerLinker>
 
