@@ -18,3 +18,4 @@ DrMemory/
 gdb/
 libexec/
 elf_tool/
+nasm/
