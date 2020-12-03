@@ -33,7 +33,6 @@
 	<objdump>elf_tool/bin/i686-elf-objdump.exe</objdump>
 	<nasm>nasm/nasm.exe</nasm>
 	<as>elf_tool/bin/i686-elf-as</as>
-	<nasm>nasm/nasm.exe</nasm>
 	<ndisasm>nasm/ndisasm.exe</ndisasm>
 	
 </Exe>
