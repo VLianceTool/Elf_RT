@@ -34,6 +34,7 @@
 	<nasm>nasm/nasm.exe</nasm>
 	<as>elf_tool/bin/x86_64-elf-as</as>
 	<ndisasm>nasm/ndisasm.exe</ndisasm>
+	<cat>win-tools/bin/cat.exe</cat>
 	
 </Exe>
 
@@ -47,7 +48,6 @@
 	<CompilerLinker>-I"{_pProject}" </CompilerLinker>
 
 	<!-- <CompilerLinker>-fno-rtti </CompilerLinker>-->
-	<CompilerLinker>-m32 </CompilerLinker>
 	<!-- <CompilerLinker type="C++">-std=c++11 </CompilerLinker> --> <!--  (set a defalut value)  --> 
 
 	<Compiler>-MD </Compiler>

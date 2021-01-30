@@ -19,3 +19,4 @@ gdb/
 libexec/
 elf_tool/
 nasm/
+win-tools/
