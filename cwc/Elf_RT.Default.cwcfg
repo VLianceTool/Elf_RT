@@ -15,24 +15,24 @@
 
 <Exe>
 
-    <Compiler type="C">elf_tool/bin/i686-elf-gcc.exe -std=gnu99 </Compiler> <!-- std=c99 -->
+    <Compiler type="C">elf_tool/bin/x86_64-elf-gcc.exe -std=gnu99 </Compiler> <!-- std=c99 -->
 	
-    <Compiler>elf_tool/bin/i686-elf-g++.exe</Compiler>
-	<Linker>elf_tool/bin/i686-elf-g++.exe</Linker>
-    <Linker_Static>elf_tool/bin/i686-elf-ar.exe</Linker_Static>
-    <Linker_Dynamic>elf_tool/bin/i686-elf-g++.exe</Linker_Dynamic>
+    <Compiler>elf_tool/bin/x86_64-elf-g++.exe</Compiler>
+	<Linker>elf_tool/bin/x86_64-elf-g++.exe</Linker>
+    <Linker_Static>elf_tool/bin/x86_64-elf-ar.exe</Linker_Static>
+    <Linker_Dynamic>elf_tool/bin/x86_64-elf-g++.exe</Linker_Dynamic>
 	
 	
 	<Debugger>gdb/gdb_32.exe</Debugger>
 	<Sanitizer>DrMemory/bin/drmemory.exe</Sanitizer>
 
 
-	<gcc>elf_tool/bin/i686-elf-gcc.exe</gcc>
-	<ld>elf_tool/bin/i686-elf-ld.exe</ld>
-	<objcopy>elf_tool/bin/i686-elf-objcopy.exe</objcopy>
-	<objdump>elf_tool/bin/i686-elf-objdump.exe</objdump>
+	<gcc>elf_tool/bin/x86_64-elf-gcc.exe</gcc>
+	<ld>elf_tool/bin/x86_64-elf-ld.exe</ld>
+	<objcopy>elf_tool/bin/x86_64-elf-objcopy.exe</objcopy>
+	<objdump>elf_tool/bin/x86_64-elf-objdump.exe</objdump>
 	<nasm>nasm/nasm.exe</nasm>
-	<as>elf_tool/bin/i686-elf-as</as>
+	<as>elf_tool/bin/x86_64-elf-as</as>
 	<ndisasm>nasm/ndisasm.exe</ndisasm>
 	
 </Exe>
@@ -41,7 +41,7 @@
 	<CompilerLinker>-I"{_pModule}DJGPP/sys-include/" </CompilerLinker>
 	<CompilerLinker>-I"{_pModule}linux/" </CompilerLinker>
 	
-	<CompilerLinker>-I"{_pModule}elf_tool/lib/gcc/i686-elf/7.1.0/include/" </CompilerLinker>
+	<CompilerLinker>-I"{_pModule}elf_tool/lib/gcc/x86_64-elf/7.1.0/include/" </CompilerLinker>
 	<CompilerLinker>-I"{_pModule}elf_tool/include/" </CompilerLinker>
 	
 	<CompilerLinker>-I"{_pProject}" </CompilerLinker>
