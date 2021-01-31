@@ -20,3 +20,5 @@ libexec/
 elf_tool/
 nasm/
 win-tools/
+x86_64-linux-glibc/
+glibc/
