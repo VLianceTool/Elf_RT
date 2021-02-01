@@ -42,24 +42,39 @@
 <!--	<CompilerLinker>-I"{_pModule}DJGPP/sys-include/" </CompilerLinker>-->
 <!--	<CompilerLinker>-I"{_pModule}linux/" </CompilerLinker>-->
 	
-	<Compiler>-D_GNU_SOURCE</Compiler>
+	<Compiler>-D_GNU_SOURCE -D__GXX_EXPERIMENTAL_CXX0X__ </Compiler>
+	
+	<Compiler>-I"{_pModule}uuid_i386/include/"</Compiler>
+	
+	
+	
+	
+	
+	
+<CompilerLinker>-I"{_pModule}x86_64-linux-glibc/x86_64-linux/include/c++/4.6.x-google/x86_64-linux/" </CompilerLinker>
+	
+<CompilerLinker>-I"{_pModule}x86_64-linux-glibc/x86_64-linux/include/c++/4.6.x-google/" </CompilerLinker>
+
+
+	<CompilerLinker>-I"{_pModule}x86_64-linux-glibc/sysroot/usr/include/" </CompilerLinker>
+	
+	
 	<CompilerLinker>-I"{_pModule}glibc/libio/" </CompilerLinker>
 	
 	<CompilerLinker>-I"{_pModule}glibc/sysdeps/x86/" </CompilerLinker><!--	__x86_64__ -->
 
 	<CompilerLinker>-I"{_pModule}glibc/sysdeps/x86_64/x32/" </CompilerLinker>
 	<CompilerLinker>-I"{_pModule}glibc/sysdeps/generic/" </CompilerLinker> 
-	
+
 	<CompilerLinker>-I"{_pModule}glibc/sysdeps/unix/sysv/linux/generic/" </CompilerLinker> 
 	<CompilerLinker>-I"{_pModule}glibc/sysdeps/unix/sysv/linux/" </CompilerLinker> 
 
-		
 	<CompilerLinker>-I"{_pModule}glibc/include/" </CompilerLinker>
+
 	<CompilerLinker>-I"{_pModule}glibc/" </CompilerLinker>
-	
-	
-	<CompilerLinker>-I"{_pModule}x86_64-linux-glibc/sysroot/usr/include/" </CompilerLinker>
-	
+
+						 
+	<CompilerLinker>-I"{_pModule}x86_64-linux-glibc/lib/gcc/x86_64-linux/4.6.x-google/install-tools/include/" </CompilerLinker>
 	
 	
 	
