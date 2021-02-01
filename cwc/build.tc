@@ -4,3 +4,13 @@ x86_64-elf-tools-windows.zip
 
 win-tools:
 https://github.com/harshvsingh8/win-tools/tree/master/bin
+
+prebuild-linux
+https://android.googlesource.com/platform/prebuilts/
+https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/
+
+//Remove redirection in 
+x86_64-linux-glibc\sysroot\usr\lib32
+x86_64-linux-glibc\sysroot\usr\lib64
+ex:
+libc-2.7.so to libc.so or libc.so.6

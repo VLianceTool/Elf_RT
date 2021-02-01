@@ -96,6 +96,12 @@
   
 	<Linker>-Werror=return-type </Linker>
 	
+					
+	<Linker>-L "{_pModule}x86_64-linux-glibc/sysroot/usr/lib32/" </Linker> <!-- 32 is same?-->
+	
+	<Linker>-L "{_pModule}x86_64-linux-glibc/x86_64-linux/lib/" </Linker>
+	<Linker>-L "{_pModule}x86_64-linux-glibc/x86_64-linux/lib64/" </Linker>
+
 	<Linker>-static-libgcc -static-libstdc++ </Linker>
 	<Linker_Static>rcs </Linker_Static>
 	<Linker_Dynamic>-shared </Linker_Dynamic>
