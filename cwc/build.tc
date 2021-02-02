@@ -9,6 +9,10 @@ prebuild-linux
 https://android.googlesource.com/platform/prebuilts/
 https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/
 
+i686-linux-glibc2.7-4.6
++
+x86_64-linux-glibc2.7-4.6
+
 //Remove redirection in 
 x86_64-linux-glibc\sysroot\usr\lib32
 x86_64-linux-glibc\sysroot\usr\lib64

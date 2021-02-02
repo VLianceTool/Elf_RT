@@ -95,7 +95,15 @@
 	<Linker>-Wno-unused-value -Wno-deprecated-register -Wno-ignored-attributes -Wno-expansion-to-defined -Wno-ignored-pragmas </Linker>	
   
 	<Linker>-Werror=return-type </Linker>
+	<Linker>-nostartfiles </Linker>
+	<Linker> {_pModule}x86_64-linux-glibc/lib/gcc/i686-linux/4.6.x-google/crtbegin.o </Linker>
+	<Linker> {_pModule}x86_64-linux-glibc/lib/gcc/i686-linux/4.6.x-google/crtend.o </Linker>
+	<Linker> {_pModule}elf_tool/lib/gcc/x86_64-elf/7.1.0/crt0.o </Linker>
 	
+	
+	
+	<Linker>--sysroot "{_pModule}x86_64-linux-glibc/lib/gcc/i686-linux/4.6.x-google/"  </Linker> 
+		   <Linker>-L "{_pModule}x86_64-linux-glibc/lib/gcc/i686-linux/4.6.x-google/"  </Linker> 
 					
 	<Linker>-L "{_pModule}x86_64-linux-glibc/sysroot/usr/lib32/" </Linker> <!-- 32 is same?-->
 	
