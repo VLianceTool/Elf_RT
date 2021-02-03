@@ -100,14 +100,16 @@
 	<Linker> {_pModule}x86_64-linux-glibc/lib/gcc/i686-linux/4.6.x-google/crtend.o </Linker>
 	<Linker> {_pModule}x86_64-linux-glibc/lib/gcc/i686-linux/4.6.x-google/crtprec32.o </Linker>
 
-	<Linker> {_pModule}x86_64-linux-glibc/sysroot/usr/lib32/crt1.o </Linker> <!-- 32 is same?-->
-	<Linker> {_pModule}x86_64-linux-glibc/sysroot/usr/lib32/crti.o </Linker> <!-- 32 is same?-->
+	<Linker> {_pModule}x86_64-linux-glibc/sysroot/usr/lib32/crt1.o </Linker>
+	<Linker> {_pModule}x86_64-linux-glibc/sysroot/usr/lib32/crti.o </Linker> 
+	
+	<CompilerLinker>-m32 </CompilerLinker>
+	<Linker> -Wl,--oformat=elf32-i386 -Wl,-melf_i386</Linker> 
 	
 	
-	<Linker>--sysroot "{_pModule}x86_64-linux-glibc/lib/gcc/i686-linux/4.6.x-google/"  </Linker> 
-		   <Linker>-L "{_pModule}x86_64-linux-glibc/lib/gcc/i686-linux/4.6.x-google/"  </Linker> 
+	   <Linker>-L "{_pModule}x86_64-linux-glibc/lib/gcc/i686-linux/4.6.x-google/"  </Linker> 
 					
-	<Linker>-L "{_pModule}x86_64-linux-glibc/sysroot/usr/lib32/" </Linker> <!-- 32 is same?-->
+	<Linker>-L "{_pModule}x86_64-linux-glibc/sysroot/usr/lib32/" </Linker>
 	
 	<Linker>-L "{_pModule}x86_64-linux-glibc/x86_64-linux/lib/" </Linker>
 	<Linker>-L "{_pModule}x86_64-linux-glibc/x86_64-linux/lib64/" </Linker>
