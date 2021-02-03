@@ -44,9 +44,9 @@
 	
 	<Compiler>-D_GNU_SOURCE -D__GXX_EXPERIMENTAL_CXX0X__ </Compiler>
 	
-	<Compiler>-I"{_pModule}uuid_i386/include/"</Compiler>
+	<Compiler>-I"{_pModule}uuid/linux-i686/include/"</Compiler>
 	
-	
+
 	
 	
 	
