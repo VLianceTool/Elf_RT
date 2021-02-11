@@ -8,7 +8,7 @@
 	<Type name="C++"> <Extention>c++,cc,cpp,cxx</Extention> </Type>
 	 <!-- <Type name="C~">  <Extention>cw</Extention>             </Type>-->
 	 
-	<BinExt>exe</BinExt>
+	<BinExt>elf</BinExt>
 	  
 </Config>
 
@@ -110,11 +110,14 @@
 	   <Linker>-L "{_pModule}x86_64-linux-glibc/lib/gcc/i686-linux/4.6.x-google/"  </Linker> 
 					
 	<Linker>-L "{_pModule}x86_64-linux-glibc/sysroot/usr/lib32/" </Linker>
-	
+	<Linker>-Wl,-rpath-link="{_pModule}x86_64-linux-glibc/sysroot/usr/lib32/" </Linker>
+	<Linker>-Wl,-rpath-link="{_pModule}x86_64-linux-glibc/x86_64-linux/lib/" </Linker>
+
+
 	<Linker>-L "{_pModule}x86_64-linux-glibc/x86_64-linux/lib/" </Linker>
 	<Linker>-L "{_pModule}x86_64-linux-glibc/x86_64-linux/lib64/" </Linker>
 
-	<Linker>-static-libgcc -static-libstdc++ </Linker>
+	<!-- <Linker>-static-libgcc -static-libstdc++ </Linker> -->
 	<Linker_Static>rcs </Linker_Static>
 	<Linker_Dynamic>-shared </Linker_Dynamic>
 
