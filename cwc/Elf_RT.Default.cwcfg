@@ -95,14 +95,16 @@
 	<Linker>-Wno-unused-value -Wno-deprecated-register -Wno-ignored-attributes -Wno-expansion-to-defined -Wno-ignored-pragmas </Linker>	
   
 	<Linker>-Werror=return-type </Linker>
-	<Linker>-nostartfiles </Linker>
+	<!-- <Linker>-nostartfiles </Linker> 
+
 	<Linker> {_pModule}x86_64-linux-glibc/lib/gcc/i686-linux/4.6.x-google/crtbeginS.o </Linker>
 	<Linker> {_pModule}x86_64-linux-glibc/lib/gcc/i686-linux/4.6.x-google/crtend.o </Linker>
 	<Linker> {_pModule}x86_64-linux-glibc/lib/gcc/i686-linux/4.6.x-google/crtprec32.o </Linker>
 
+	<Linker> {_pModule}x86_64-linux-glibc/sysroot/usr/lib32/crt0.o </Linker>
 	<Linker> {_pModule}x86_64-linux-glibc/sysroot/usr/lib32/crt1.o </Linker>
 	<Linker> {_pModule}x86_64-linux-glibc/sysroot/usr/lib32/crti.o </Linker> 
-	
+	--> 
 	<CompilerLinker>-m32 </CompilerLinker>
 	<Linker> -Wl,--oformat=elf32-i386 -Wl,-melf_i386</Linker> 
 	
